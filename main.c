@@ -4,6 +4,7 @@
 
 void initializeCHIP8();
 void sdlEventLoop();
+void destroyCHIP8Screen();
 
 int main(int argc, char** argv)
 {
@@ -14,5 +15,5 @@ int main(int argc, char** argv)
     loadROMFromPath(argv[1]);
 
     sdlEventLoop();
-
+    destroyCHIP8Screen();
 }
