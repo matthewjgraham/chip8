@@ -23,8 +23,6 @@ startTimers(void*)
     };
     for (;;) {
         if (theCHIP8.soundTimer > 0) {
-            printf("I am happening!\n");
-            printf("\a");
             --theCHIP8.soundTimer;
         }
         if (theCHIP8.delayTimer > 0)
